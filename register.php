@@ -23,6 +23,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Validate input
     if (empty($name) || empty($email) || empty($password) || empty($role)) {
         $error = 'All fields are required';
+    } elseif (!preg_match('/^[a-zA-Z\s]+$/', $name)) {
+        $error = 'Name should only contain letters and spaces';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/@gmail\.com$/', $email)) {
+        $error = 'Email must be a valid Gmail address';
+    } elseif (strlen($password) < 8) {
+        $error = 'Password must be at least 8 characters long';
+    } elseif (!preg_match('/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/', $password)) {
+        $error = 'Password must contain at least 1 letter, 1 number, and 1 special character';
+    } elseif (preg_match('/^[@$!%*#?&]/', $password)) {
+        $error = 'Password cannot start with a special character';
     } elseif ($password !== $confirmPassword) {
         $error = 'Passwords do not match';
     } elseif ($role === 'FARMER' && empty($farmName)) {
@@ -174,6 +184,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     Already have an account? 
                     <a href="login.php" class="font-medium text-green-600 hover:text-green-500">
                         Sign in
+                    </a>
+                </p>
+                <p class="text-sm text-gray-600 mt-2">
+                    <a href="index.php" class="font-medium text-green-600 hover:text-green-500">
+                        <i class="fas fa-home"></i> Go to Home Page
                     </a>
                 </p>
             </div>
