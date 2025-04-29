@@ -159,6 +159,8 @@ include __DIR__ . '/includes/header.php';
             </div>
              <!-- TODO: Add Profile Picture Upload -->
 
+            <h2 class="profile-title">My Profile</h2>
+
             </div>
         </main>
     </div>

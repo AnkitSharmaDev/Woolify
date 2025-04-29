@@ -121,7 +121,7 @@ $rootPath = $isSubDir ? '../' : '';
                 <div class="nav-section-header">FARM MANAGEMENT</div>
                 <a href="<?php echo $farmerBasePath; ?>dashboard.php" class="nav-link <?php echo $current_page == 'dashboard.php' ? 'active' : ''; ?>"> <i class="fas fa-home"></i> <span>Overview</span> </a>
                 <a href="<?php echo $farmerBasePath; ?>farms.php" class="nav-link <?php echo $current_page == 'farms.php' ? 'active' : ''; ?>"> <i class="fas fa-warehouse"></i> <span>My Farms</span> </a>
-                <a href="<?php echo $farmerBasePath; ?>add_farm.php" class="nav-link <?php echo $current_page == 'add_farm.php' ? 'active' : ''; ?>"> <i class="fas fa-plus"></i> <span>Add New Farm</span> </a>
+
             </div>
             <div class="nav-section">
                 <div class="nav-section-header">PRODUCTION</div>

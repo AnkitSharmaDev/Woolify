@@ -25,9 +25,7 @@ $retailerPath = $rootPath . 'retailer/'; // Path to retailer-specific actions
    <div class="nav-right">
        <?php if ($user['role'] === 'FARMER'): ?>
             <!-- Farmer Actions -->
-            <div class="nav-item d-none d-md-block"> <!-- Hide on smaller screens -->
-                <a href="<?php echo $farmerPath; ?>add_farm.php" class="btn btn-sm btn-outline-primary"> <i class="fas fa-plus me-1"></i> Add Farm </a>
-            </div>
+            
             <div class="nav-item d-none d-md-block">
                 <a href="<?php echo $farmerPath; ?>add_batch.php" class="btn btn-sm btn-success"> <i class="fas fa-plus-circle me-1"></i> Create Batch </a>
             </div>

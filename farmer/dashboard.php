@@ -271,7 +271,7 @@ function getCapacityClass($utilization) {
                     <a href="dashboard.php" class="nav-link active"> <i class="fas fa-home"></i> <span>Overview</span> </a>
                     <!-- Point other links to placeholder/actual pages -->
                     <a href="farms.php" class="nav-link"> <i class="fas fa-warehouse"></i> <span>My Farms</span> </a>
-                    <a href="add_farm.php" class="nav-link"> <i class="fas fa-plus"></i> <span>Add New Farm</span> </a>
+                     
                 </div>
 
                 <div class="nav-section">
@@ -337,9 +337,7 @@ function getCapacityClass($utilization) {
                     <h1 class="page-title">Farm Management Overview</h1>
                 </div>
                 <div class="nav-right">
-                    <div class="nav-item">
-                        <a href="add_farm.php" class="btn btn-sm btn-outline-primary"> <i class="fas fa-plus me-1"></i> Add Farm </a>
-                    </div>
+                     
                     <div class="nav-item">
                         <a href="add_batch.php" class="btn btn-sm btn-success"> <i class="fas fa-plus-circle me-1"></i> Create Batch </a>
                     </div>
@@ -423,8 +421,8 @@ function getCapacityClass($utilization) {
                                     <th>Micron</th>
                                     <th>Grade</th>
                                     <th>Status</th>
-                                    <th>Price ($)</th> <!-- Adjust currency/label as needed -->
-                                        <th>Actions</th>
+                                    <!-- <th>Price ($)</th> Adjust currency/label as needed -->
+                                        <!-- <th>Actions</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -439,11 +437,11 @@ function getCapacityClass($utilization) {
                                             <td><?php echo htmlspecialchars($batch['micron'] ?? 'N/A'); ?></td>
                                             <td><span class="badge bg-<?php echo getQualityClass($batch['grade']); ?>"><?php echo getQualityLabel($batch['grade']); ?></span></td>
                                             <td><span class="badge rounded-pill bg-<?php echo getStatusClass($batch['status']); ?>"><?php echo ucfirst(strtolower(htmlspecialchars($batch['status']))); ?></span></td>
-                                            <td><?php echo number_format((float)($batch['price'] ?? 0), 2); ?></td>
+                                            <!-- <td><?php echo number_format((float)($batch['price'] ?? 0), 2); ?></td> -->
                                             <td>
                                                 <!-- Example Actions - Link to specific batch view/edit pages -->
-                                                <a href="view_batch.php?id=<?php echo $batch['id']; ?>" class="btn btn-sm btn-outline-primary" title="View Details"><i class="fas fa-eye"></i></a>
-                                                <a href="edit_batch.php?id=<?php echo $batch['id']; ?>" class="btn btn-sm btn-outline-secondary" title="Edit Batch"><i class="fas fa-edit"></i></a>
+                                                <!-- <a href="view_batch.php?id=<?php echo $batch['id']; ?>" class="btn btn-sm btn-outline-primary" title="View Details"><i class="fas fa-eye"></i></a>
+                                                <a href="edit_batch.php?id=<?php echo $batch['id']; ?>" class="btn btn-sm btn-outline-secondary" title="Edit Batch"><i class="fas fa-edit"></i></a> -->
                                         </td>
                                     </tr>
                                     <?php endforeach; ?>

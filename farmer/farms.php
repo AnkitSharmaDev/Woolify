@@ -28,13 +28,9 @@ include __DIR__ . '/../includes/header.php';
         <div class="dashboard-content">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h1><?php echo $pageTitle; ?></h1>
-                <?php if ($farmData): ?>
-                    <a href="edit_farm.php?id=<?php echo $farmData['id']; ?>" class="btn btn-primary">
-                        <i class="fas fa-edit me-2"></i>Edit Farm Details
-                    </a>
-                <?php endif; ?>
+                 
                 <!-- Note: Add New Farm link directs to add_farm.php (as per sidebar) -->
-                 <a href="add_farm.php" class="btn btn-success ms-2"> <i class="fas fa-plus me-2"></i>Add New Farm </a>
+                  
             </div>
 
             <?php if ($fetchError): ?>

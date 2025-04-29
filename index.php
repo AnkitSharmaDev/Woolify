@@ -572,9 +572,9 @@ $batchCount = $stmt->fetch()['batch_count'];
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div class="flex justify-between items-center h-20 ">
+                <div class="flex items-center space-x-4 ">
                     <a href="#" class="flex items-center space-x-3 group">
                         <img src="public/assets/images/logo.png" alt="Woolify" class="h-10 w-auto group-hover:scale-105 transition-transform rounded-3xl">
                         <span class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">Woolify</span>
@@ -585,19 +585,7 @@ $batchCount = $stmt->fetch()['batch_count'];
                     <a href="#journey" class="nav-link">Journey</a>
                     <a href="#features" class="nav-link">Features</a>
                     <a href="#impact" class="nav-link">Impact</a>
-                    <div class="relative group">
-                        <button class="nav-link flex items-center">
-                            <a href="resources/index.php"> Resources</a>
-                            <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </button>
-                        <div class="absolute top-full right-0 w-48 py-2 mt-2 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600">Documentation</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600">API Reference</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600">Case Studies</a>
-                        </div>
-                    </div>
+                    <a href="documentation.php" class="nav-link">Documentation</a>
                     <a href="login.php" class="px-6 py-2 text-primary-600 font-medium hover:text-primary-700 transition-colors">Login</a>
                     <a href="register.php" class="btn-primary group">
                         Get Started
@@ -620,6 +608,7 @@ $batchCount = $stmt->fetch()['batch_count'];
             <a href="#journey" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg">Journey</a>
             <a href="#features" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg">Features</a>
             <a href="#impact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg">Impact</a>
+            <a href="documentation.php" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg">Documentation</a>
             <a href="login.php" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg">Login</a>
             <a href="register.php" class="block px-3 py-2 text-base font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg">Get Started</a>
         </div>
@@ -649,7 +638,7 @@ $batchCount = $stmt->fetch()['batch_count'];
                     </span>
                 </h1>
                 
-                <p class="text-xl md:text-2xl mb-12 text-gray-600 max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl mb-12 text-[#F2F2F2] drop-shadow-md font-semibold text-3xl max-w-3xl mx-auto">
                     Experience the journey of sustainable wool production with complete transparency and traceability at every step.
                 </p>
 
@@ -689,8 +678,8 @@ $batchCount = $stmt->fetch()['batch_count'];
                     <div class="flex items-center justify-center">
                         <img class="h-12 opacity-50 hover:opacity-100 transition-opacity" src="assets/images/trust-badge-4.svg" alt="Certification 4">
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
         </div>
 
         <!-- Scroll Indicator -->
@@ -897,7 +886,7 @@ $batchCount = $stmt->fetch()['batch_count'];
                             </svg>
                         </div>
                         <div class="stat-number text-5xl font-bold text-white mb-4">
-                            <span class="counter" data-target="500">0</span>+
+                            <span class="counter" data-target="500">7</span>+
                         </div>
                         <div class="stat-label text-lg text-white/80">Sustainable Farms</div>
                         <div class="mt-4 h-1 w-24 mx-auto bg-white/20 rounded">
@@ -916,7 +905,7 @@ $batchCount = $stmt->fetch()['batch_count'];
                             </svg>
                         </div>
                         <div class="stat-number text-5xl font-bold text-white mb-4">
-                            <span class="counter" data-target="25">0</span>k
+                            <span class="counter" data-target="25">500+</span>
                         </div>
                         <div class="stat-label text-lg text-white/80">Tons of Wool Tracked</div>
                         <div class="mt-4 h-1 w-24 mx-auto bg-white/20 rounded">
@@ -935,7 +924,7 @@ $batchCount = $stmt->fetch()['batch_count'];
                             </svg>
                         </div>
                         <div class="stat-number text-5xl font-bold text-white mb-4">
-                            <span class="counter" data-target="100">0</span>%
+                            <span class="counter" data-target="100">100</span>%
                         </div>
                         <div class="stat-label text-lg text-white/80">Supply Chain Transparency</div>
                         <div class="mt-4 h-1 w-24 mx-auto bg-white/20 rounded">
@@ -1271,7 +1260,7 @@ $batchCount = $stmt->fetch()['batch_count'];
             <!-- Footer Bottom -->
             <div class="border-t border-gray-800 py-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm">&copy; 2024 Woolify. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm">&copy; 2025 Woolify. All rights reserved.</p>
                     <div class="flex space-x-6 mt-4 md:mt-0">
                         <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
                         <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
@@ -1407,6 +1396,50 @@ $batchCount = $stmt->fetch()['batch_count'];
                 });
             });
         });
+
+        // Newsletter AJAX logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('form.space-y-4');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const input = newsletterForm.querySelector('input[type="email"]');
+                    const email = input.value.trim();
+                    if (!email) return;
+                    const btn = newsletterForm.querySelector('button[type="submit"]');
+                    btn.disabled = true;
+                    btn.innerHTML = '<span class="animate-spin inline-block w-5 h-5 border-2 border-primary-500 border-t-transparent rounded-full"></span>';
+                    let msgDiv = newsletterForm.querySelector('.newsletter-msg');
+                    if (!msgDiv) {
+                        msgDiv = document.createElement('div');
+                        msgDiv.className = 'newsletter-msg mt-2 text-sm';
+                        newsletterForm.appendChild(msgDiv);
+                    }
+                    try {
+                        const res = await fetch('api/newsletter_subscribe.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: 'email=' + encodeURIComponent(email)
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                            msgDiv.textContent = 'Thank you for subscribing to our newsletter! Please check your email.';
+                            msgDiv.className = 'newsletter-msg mt-2 text-green-600';
+                            input.value = '';
+                        } else {
+                            msgDiv.textContent = data.message || 'Subscription failed. Please try again.';
+                            msgDiv.className = 'newsletter-msg mt-2 text-red-600';
+                        }
+                    } catch (err) {
+                        msgDiv.textContent = 'Network error. Please try again.';
+                        msgDiv.className = 'newsletter-msg mt-2 text-red-600';
+                    }
+                    btn.disabled = false;
+                    btn.innerHTML = `<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>`;
+                });
+            }
+        });
     </script>
+    <script src="assets/js/ai-chatbot.js"></script>  
 </body>
 </html>
